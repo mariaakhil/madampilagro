@@ -1,0 +1,425 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #f8fbf4;
+}
+
+/* Navbar */
+.agro-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.nav-container{
+  width: 92%;
+  max-width: 1350px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+/* Logo */
+.nav-logo img{
+  height: 62px;
+  width: auto;
+  display: block;
+}
+
+/* Menu */
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-menu a{
+  text-decoration: none;
+  color: #2F7D2E;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-menu a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #97C80B;
+  transition: 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active{
+  color: #97C80B;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after{
+  width: 100%;
+}
+
+/* Right section */
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-btn{
+  text-decoration: none;
+  background: #2F7D2E;
+  color: #ffffff;
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.nav-btn:hover{
+  background: #97C80B;
+  color: #111111;
+}
+
+/* Mobile Toggle */
+.menu-toggle{
+  display: none;
+  border: none;
+  background: #2F7D2E;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+
+/* Responsive */
+@media (max-width: 991px){
+  .menu-toggle{
+    display: block;
+  }
+
+  .nav-btn{
+    display: none;
+  }
+
+  .nav-logo img{
+    height: 52px;
+  }
+
+  .nav-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.35s ease;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  }
+
+  .nav-menu.show{
+    max-height: 400px;
+    padding: 8px 0;
+  }
+
+  .nav-menu a{
+    width: 100%;
+    padding: 14px 24px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #2F7D2E;
+  }
+
+  .nav-menu a::after{
+    display: none;
+  }
+
+  .nav-menu a:hover,
+  .nav-menu a.active{
+    background: #f7fbf2;
+    color: #97C80B;
+  }
+
+  .hero-content h1{
+    font-size: 34px;
+  }
+
+  .hero-content p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px){
+  .nav-container{
+    width: 94%;
+    padding: 10px 0;
+  }
+
+  .nav-logo img{
+    height: 45px;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.agro-footer{
+  background: linear-gradient(135deg, #e5ebe6 0%, #51ad51 40%, #2F7D2E 100%);
+  color: #ffffff;
+  padding: 75px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-footer::before{
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -80px;
+  width: 240px;
+  height: 240px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.agro-footer::after{
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: -80px;
+  width: 280px;
+  height: 280px;
+  background: rgba(151, 200, 11, 0.08);
+  border-radius: 50%;
+}
+
+.agro-footer .container{
+  position: relative;
+  z-index: 2;
+}
+
+.agro-footer-logo img{
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.agro-footer-about p{
+  color: rgba(255,255,255,0.82);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 24px;
+  max-width: 360px;
+}
+
+.agro-footer-social{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.agro-footer-social a{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.10);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.agro-footer-social a:hover{
+  background: #97C80B;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+.agro-footer-links h4,
+.agro-footer-contact h4{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #ffffff;
+}
+
+.agro-footer-links ul,
+.agro-footer-contact ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agro-footer-links ul li{
+  margin-bottom: 14px;
+}
+
+.agro-footer-links ul li a{
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.agro-footer-links ul li a:hover{
+  color: #97C80B;
+  padding-left: 6px;
+}
+
+.agro-footer-contact ul li{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  color: rgba(255,255,255,0.82);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.agro-footer-contact ul li i{
+  color: #97C80B;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.agro-footer-contact ul li a{
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.agro-footer-contact ul li a:hover{
+  color: #97C80B;
+}
+
+.agro-footer-bottom{
+  margin-top: 50px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 22px 0;
+}
+
+.agro-footer-bottom p{
+  color: rgba(255,255,255,0.75);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 991px){
+  .agro-footer{
+    padding: 60px 0 0;
+  }
+
+  .agro-footer-logo img{
+    max-width: 160px;
+  }
+
+  .agro-footer-links h4,
+  .agro-footer-contact h4{
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .agro-footer-about p,
+  .agro-footer-links ul li a,
+  .agro-footer-contact ul li{
+    font-size: 15px;
+  }
+
+  .agro-footer-bottom{
+    margin-top: 35px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px){
+  .agro-footer{
+    padding: 50px 0 0;
+  }
+
+  .agro-footer-logo img{
+    max-width: 145px;
+    margin-bottom: 18px;
+  }
+
+  .agro-footer-about p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .agro-footer-social a{
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .agro-footer-links h4,
+  .agro-footer-contact h4{
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .agro-footer-links ul li{
+    margin-bottom: 10px;
+  }
+
+  .agro-footer-links ul li a,
+  .agro-footer-contact ul li{
+    font-size: 14px;
+  }
+
+  .agro-footer-bottom{
+    margin-top: 28px;
+    padding: 18px 0;
+    text-align: center;
+  }
+
+  .agro-footer-bottom p{
+    font-size: 13px;
+  }
+}

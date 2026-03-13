@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Madampil Aagro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts - Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Owl -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- ✅ FIXED Custom CSS path (relative) -->
+  <link rel="stylesheet" href="css/home.css">
+   <link rel="stylesheet" href="css/nav.css">
+
+ 
+</head>
+<style>
+    .agro-banner-bg{
+  position: absolute;
+  inset: 0;
+  background: url("images/bg.jpg") center center/cover no-repeat;
+  transform: scale(1);
+  animation: bannerZoom 12s ease-in-out infinite alternate;
+  z-index: -2;
+}
+</style>
+<body>
+
+  <!-- Fixed Navbar -->
+  <header class="agro-navbar">
+    <div class="nav-container">
+      
+      <!-- Logo -->
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="Agro Company Logo">
+      </a>
+
+      <!-- Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- Right Button -->
+      <div class="nav-right">
+        <a href="#" class="nav-btn">Get Quote</a>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Demo content -->
+  <!-- HERO SECTION -->
+<section class="hero-slider-section">
+  <div class="owl-carousel owl-theme hero-slider">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide" style="background-image: url('images/bg.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Welcome to Our Agro Company</h1>
+          <p>Growing sustainability, quality, and trust with nature-inspired solutions.</p>
+          <a href="#" class="hero-btn">Explore More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background-image: url('images/agro-banner2.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Fresh Agriculture, Better Future</h1>
+          <p>We deliver innovative agricultural solutions for a greener and stronger tomorrow.</p>
+          <a href="#" class="hero-btn">View Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide" style="background-image: url('images/agro-banner3.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Rooted in Nature, Driven by Quality</h1>
+          <p>Empowering farmers, businesses, and communities with trusted agro services.</p>
+          <a href="#" class="hero-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="agro-about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <div class="agro-about-content">
+          <h2 class="agro-about-title">
+            <span>About</span> MAPL Agro Limited
+          </h2>
+
+          <p>
+            MAPL Agro Limited is committed to delivering quality-driven agricultural solutions
+            with a strong focus on sustainability, innovation, and long-term growth. Our company
+            works towards empowering the agriculture sector by providing reliable products and
+            services that support farmers, agribusinesses, and communities.
+          </p>
+
+          <p>
+            With a vision rooted in nature and progress, MAPL Agro Limited continues to build
+            trust through excellence, responsible practices, and customer-focused service. We aim
+            to create value in every step of the agricultural journey while contributing to a
+            greener and more productive future.
+          </p>
+
+          <a href="#" class="agro-about-btn">Know More</a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6">
+        <div class="agro-about-image-wrap">
+          <div class="agro-about-circle">
+            <img src="images/about-agro.png" alt="About MAPL Agro Limited" class="agro-about-image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="agro-feature-section">
+  <div class="container">
+    
+    <div class="agro-feature-heading">
+      <h2>
+        We at <span>MAPL</span> work for livelihood improvement of marginalized
+        <br>
+        small hold and tenant farmers
+      </h2>
+    </div>
+
+    <div class="row g-0 agro-feature-row">
+
+      <!-- Item 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="agro-feature-card">
+          <div class="agro-feature-icon">
+            <i class="bi bi-hand-thumbs-up"></i>
+          </div>
+          <p>
+            MAPL is a trusted agro services company focused on sustainable farming support.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="agro-feature-card">
+          <div class="agro-feature-icon">
+            <i class="bi bi-globe-central-south-asia"></i>
+          </div>
+          <p>
+            Established with a strong vision and expanding agricultural support across regions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="agro-feature-card">
+          <div class="agro-feature-icon">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <p>
+            One-stop solution for farmers, agribusinesses, and rural farming communities.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="agro-feature-card">
+          <div class="agro-feature-icon">
+            <i class="bi bi-award"></i>
+          </div>
+          <p>
+            Building a strong network through quality, innovation, and agricultural excellence.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="agro-banner-section">
+  <div class="agro-banner-bg"></div>
+  <div class="agro-banner-overlay"></div>
+
+  <div class="container">
+    <div class="agro-banner-content">
+      <h2>Growing Agriculture with Innovation & Trust</h2>
+      <p>
+        MAPL Agro Limited delivers reliable agricultural solutions designed to
+        support farmers, improve productivity, and create a sustainable future.
+      </p>
+      <a href="#" class="agro-banner-btn">Explore More</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="agro-products-section">
+  <div class="container-fluid px-lg-5">
+
+    <!-- Heading -->
+    <div class="agro-products-heading text-center">
+      <h2>
+        <span>Our Range of</span><br>
+        Agricultural Products
+      </h2>
+    </div>
+
+    <!-- Slider Wrap -->
+    <div class="agro-products-slider-wrap">
+      <div class="owl-carousel owl-theme agro-products-slider">
+
+        <!-- Card 1 -->
+        <div class="item">
+          <div class="agro-product-card">
+            <h3>High Density Inputs</h3>
+            <p>
+              High-density farming boosts crop yields without increasing the space
+              required for planting. The technique is highly effective for modern
+              and sustainable cultivation practices.
+            </p>
+            <a href="#" class="agro-product-btn">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="item">
+          <div class="agro-product-card">
+            <h3>Hydromin Range</h3>
+            <p>
+              Advanced agricultural nutrition solutions designed to improve crop
+              health, productivity, and nutrient absorption across a variety of
+              farming environments.
+            </p>
+            <a href="#" class="agro-product-btn">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="item">
+          <div class="agro-product-card">
+            <h3>Micronutrients</h3>
+            <p>
+              Micronutrients consist of a fine blend of mineral elements including
+              Zinc, Copper, Manganese, Iron, Boron, and Molybdenum for balanced plant growth.
+            </p>
+            <a href="#" class="agro-product-btn">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="item">
+          <div class="agro-product-card">
+            <h3>Plant Nutrition</h3>
+            <p>
+              Premium plant nutrition products that help improve development,
+              enhance resistance, and deliver better harvest quality for farmers.
+            </p>
+            <a href="#" class="agro-product-btn">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="item">
+          <div class="agro-product-card">
+            <h3>Crop Care Solutions</h3>
+            <p>
+              Effective crop care solutions developed to support healthier growth,
+              stronger roots, and improved agricultural output in all seasons.
+            </p>
+            <a href="#" class="agro-product-btn">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="agro-stats-section">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-6 col-md-4 col-lg">
+        <div class="agro-stat-card">
+          <h3>20<span>+</span></h3>
+          <p>Team's Avg Experience</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg">
+        <div class="agro-stat-card">
+          <h3>60<span>+</span></h3>
+          <p>FPO Associated</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg">
+        <div class="agro-stat-card">
+          <h3>300<span>+</span></h3>
+          <p>Vendor's Network</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg">
+        <div class="agro-stat-card">
+          <h3>25,000<span>+</span></h3>
+          <p>Farmer's Network</p>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="agro-contact-banner">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+
+      <div class="col-lg-8">
+        <div class="agro-contact-content">
+          <span class="agro-contact-tag">Get In Touch</span>
+          <h2>Let’s Grow Better Agriculture Together</h2>
+          <p>
+            Connect with MAPL Agro Limited for trusted agricultural solutions,
+            quality products, and expert support for your farming and business needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 text-lg-end">
+        <div class="agro-contact-action">
+          <a href="#" class="agro-contact-btn">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="agro-partners-section">
+  <div class="container">
+    
+    <div class="agro-partners-heading text-center">
+      <span class="agro-partners-subtitle">Trusted Partners</span>
+      <h2>Our Trusted Partners</h2>
+      <p>
+        We are proud to work with reliable partners who support our vision for
+        better agriculture, quality products, and sustainable growth.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center align-items-center">
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="agro-partner-logo-card">
+          <img src="images/partner1.png" alt="Partner 1">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="agro-partner-logo-card">
+          <img src="images/partner2.png" alt="Partner 2">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="agro-partner-logo-card">
+          <img src="images/partner3.png" alt="Partner 3">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="agro-partner-logo-card">
+          <img src="images/partner4.png" alt="Partner 4">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="agro-partner-logo-card">
+          <img src="images/partner5.png" alt="Partner 5">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="agro-partner-logo-card">
+          <img src="images/partner6.png" alt="Partner 6">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="agro-footer">
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- Column 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="agro-footer-about">
+          <a href="#" class="agro-footer-logo">
+            <img src="images/logo.png" alt="MAPL Agro Limited">
+          </a>
+          <p>
+            MAPL Agro Limited is committed to delivering trusted agricultural
+            solutions with quality, sustainability, and innovation for a better future.
+          </p>
+
+          <div class="agro-footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="agro-footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="agro-footer-links">
+          <h4>Our Products</h4>
+          <ul>
+            <li><a href="#">Micronutrients</a></li>
+            <li><a href="#">Hydromin Range</a></li>
+            <li><a href="#">Plant Nutrition</a></li>
+            <li><a href="#">Crop Care</a></li>
+            <li><a href="#">Agro Solutions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="agro-footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Your company address goes here</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+910000000000">+91 00000 00000</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:info@maplagro.com">info@maplagro.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="agro-footer-bottom">
+      <div class="row align-items-center gy-2">
+        <div class="col-md-6">
+          <p class="mb-0">© 2026 MAPL Agro Limited. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">
+            Designed with care for sustainable growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+
+
+
+
+
+    
+  $('.hero-slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: true,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    smartSpeed: 1000,
+    navText: [
+      '<span>&#10094;</span>',
+      '<span>&#10095;</span>'
+    ]
+  });
+
+
+
+
+
+
+
+  $('.agro-products-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 900,
+    navText: [
+      '<span>&larr;</span>',
+      '<span>&rarr;</span>'
+    ],
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      992: {
+        items: 3
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
