@@ -299,45 +299,52 @@ section{
   transform: translateY(-4px);
 }
 
+
 .agro-about-image-wrap{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .agro-about-circle{
-  width: 100%;
-  max-width: 560px;
-  aspect-ratio: 1 / 1;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  transition: transform 0.4s ease;
-}
-
-.agro-about-circle:hover{
-  transform: scale(1.03);
-}
-
-.agro-about-circle::before{
-  content: "";
-  position: absolute;
-  inset: 7%;
-  border: 2px solid rgba(47, 125, 46, 0.18);
-  border-radius: 50%;
+  border: 6px solid #97C80B;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
 .agro-about-image{
   width: 100%;
-  max-width: 560px;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.4s ease;
 }
 
+.agro-about-circle:hover .agro-about-image{
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 991px){
+  .agro-about-circle{
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 575px){
+  .agro-about-circle{
+    width: 260px;
+    height: 260px;
+  }
+}
 /* Tablet */
 @media (max-width: 991px){
   .agro-about-section{
@@ -360,9 +367,7 @@ section{
     line-height: 1.7;
   }
 
-  .agro-about-image-wrap{
-    margin-top: 20px;
-  }
+  
 
   .agro-about-circle{
     max-width: 460px;
