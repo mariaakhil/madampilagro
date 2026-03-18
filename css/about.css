@@ -1,0 +1,1934 @@
+:root{
+  --agro-green:#2f7d32;
+  --agro-green-dark:#1f5d24;
+  --agro-green-light:#eaf5ea;
+  --agro-text:#1f1f1f;
+  --agro-muted:#6b7280;
+  --agro-white:#ffffff;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--agro-text);
+}
+
+/* HERO */
+.agro-about-hero{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-about-hero-wrap{
+  position: relative;
+  min-height: 340px;
+}
+
+.agro-about-hero-img{
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.agro-about-hero-wrap::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.18), rgba(0,0,0,0.08));
+}
+
+.agro-about-hero .container{
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.agro-about-hero-card{
+  background: var(--agro-white);
+  max-width: 300px;
+  padding: 28px 24px;
+  border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.agro-about-hero-card h1{
+  font-size: 38px;
+  font-weight: 750;
+  margin-bottom: 10px;
+  color: var(--agro-green);
+}
+
+.agro-about-hero-card p{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--agro-green);
+}
+
+.agro-about-hero-card p a{
+  color: var(--agro-green);
+  text-decoration: none;
+}
+
+.agro-about-hero-card p span{
+  margin: 0 6px;
+  color: #8fb98f;
+}
+
+/* INTRO */
+.agro-about-intro{
+  padding-top: 90px !important;
+  background: #fff;
+}
+
+.agro-about-content{
+  padding-right: 20px;
+}
+
+.agro-subtitle{
+  display: inline-block;
+  color: var(--agro-green);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.agro-about-content h2{
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--agro-text);
+}
+
+.agro-about-content p{
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--agro-muted);
+  margin-bottom: 16px;
+  max-width: 540px;
+}
+
+.agro-btn{
+  display: inline-block;
+  background: var(--agro-green);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.agro-btn:hover{
+  background: var(--agro-green-dark);
+  color: #fff;
+}
+
+/* IMAGES */
+.agro-about-images{
+  position: relative;
+}
+
+.agro-img-card{
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.agro-img-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.small-img{
+  height: 210px;
+}
+
+.small-img img{
+  height: 210px;
+}
+
+.green-bg{
+  background: var(--agro-green);
+  padding: 20px;
+  border-radius: 8px;
+  height: 270px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.green-bg img{
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px){
+  .agro-about-hero-wrap,
+  .agro-about-hero-img{
+    height: 280px;
+  }
+
+  .agro-about-hero .container{
+    bottom: -30px;
+  }
+
+  .agro-about-hero-card{
+    max-width: 260px;
+    padding: 22px 20px;
+  }
+
+  .agro-about-hero-card h1{
+    font-size: 28px;
+  }
+
+  .agro-about-intro{
+    padding-top: 75px !important;
+  }
+
+  .agro-about-content h2{
+    font-size: 34px;
+  }
+
+  .agro-about-content{
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px){
+  .agro-about-hero-wrap,
+  .agro-about-hero-img{
+    height: 230px;
+  }
+
+  .agro-about-hero .container{
+    position: absolute;
+    bottom: -25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .agro-about-hero-card{
+    max-width: 220px;
+    padding: 18px 16px;
+    border-radius: 8px;
+  }
+
+  .agro-about-hero-card h1{
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .agro-about-hero-card p{
+    font-size: 11px;
+  }
+
+  .agro-about-intro{
+    padding-top: 65px !important;
+  }
+
+  .agro-about-content h2{
+    font-size: 28px;
+  }
+
+  .agro-about-content p{
+    font-size: 14px;
+  }
+
+  .small-img{
+    height: 170px;
+  }
+
+  .small-img img{
+    height: 170px;
+  }
+
+  .green-bg{
+    height: 220px;
+    padding: 14px;
+  }
+
+  .green-bg img{
+    height: 140px;
+  }
+}
+
+@media (max-width: 575.98px){
+  .agro-about-hero-card{
+    max-width: 190px;
+    padding: 15px 14px;
+  }
+
+  .agro-about-hero-card h1{
+    font-size: 21px;
+  }
+
+  .agro-about-content h2{
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.agro-founders-section{
+  padding: 90px 0;
+  background: linear-gradient(180deg, #588d12 0%, #9eb677 100%);
+}
+
+.agro-founders-head{
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+
+.agro-founders-subtitle{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d9b3f;
+  margin-bottom: 10px;
+}
+
+.agro-founders-head h2{
+  font-size: 44px;
+  font-weight: 800;
+  color: #1f3b22;
+  margin-bottom: 14px;
+}
+
+.agro-founders-head p{
+  font-size: 15px;
+  line-height: 1.9;
+  color: #59665a;
+  margin: 0;
+}
+
+.agro-founder-card{
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(26, 57, 31, 0.08);
+  border: 1px solid rgba(44, 140, 60, 0.08);
+  height: 100%;
+  transition: 0.35s ease;
+}
+
+.agro-founder-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(26, 57, 31, 0.12);
+}
+
+.agro-founder-image-wrap{
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  background: #eef7ea;
+}
+
+.agro-founder-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.agro-founder-card:hover .agro-founder-image{
+  transform: scale(1.05);
+}
+
+.agro-founder-content{
+  padding: 28px 26px 26px;
+  text-align: center;
+}
+
+.agro-founder-content h3{
+  font-size: 28px;
+  font-weight: 800;
+  color: #1f3b22;
+  margin-bottom: 8px;
+}
+
+.agro-founder-role{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d9b3f;
+  margin-bottom: 16px;
+}
+
+.agro-founder-content p{
+  font-size: 14px;
+  line-height: 1.9;
+  color: #5c675d;
+  margin-bottom: 20px;
+}
+
+.agro-founder-social{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.agro-founder-social a{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #eef8ea;
+  color: #2d9b3f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.agro-founder-social a:hover{
+  background: #2d9b3f;
+  color: #fff;
+}
+
+/* tablet */
+@media (max-width: 991.98px){
+  .agro-founders-section{
+    padding: 70px 0;
+  }
+
+  .agro-founders-head{
+    margin-bottom: 40px;
+  }
+
+  .agro-founders-head h2{
+    font-size: 36px;
+  }
+
+  .agro-founder-image-wrap{
+    height: 320px;
+  }
+
+  .agro-founder-content h3{
+    font-size: 24px;
+  }
+}
+
+/* mobile */
+@media (max-width: 767.98px){
+  .agro-founders-section{
+    padding: 55px 0;
+  }
+
+  .agro-founders-head{
+    margin-bottom: 32px;
+  }
+
+  .agro-founders-subtitle{
+    font-size: 14px;
+  }
+
+  .agro-founders-head h2{
+    font-size: 30px;
+  }
+
+  .agro-founders-head p{
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .agro-founder-card{
+    border-radius: 22px;
+  }
+
+  .agro-founder-image-wrap{
+    height: 280px;
+  }
+
+  .agro-founder-content{
+    padding: 22px 18px 22px;
+  }
+
+  .agro-founder-content h3{
+    font-size: 22px;
+  }
+
+  .agro-founder-role{
+    font-size: 13px;
+  }
+
+  .agro-founder-content p{
+    font-size: 13px;
+  }
+
+  .agro-founder-social a{
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+}
+
+/* small mobile */
+@media (max-width: 575.98px){
+  .agro-founders-head h2{
+    font-size: 26px;
+  }
+
+  .agro-founder-image-wrap{
+    height: 240px;
+  }
+
+  .agro-founder-content h3{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+.agro-organic-banner{
+  padding: 50px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.agro-organic-banner-wrap{
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)),
+    url("images/organic-field-bg.jpg") center center/cover no-repeat;
+  padding: 50px 60px;
+}
+
+.agro-organic-content{
+  position: relative;
+  z-index: 5;
+  max-width: 500px;
+}
+
+.agro-organic-subtitle{
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.agro-organic-content h2{
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-shadow: 0 5px 14px rgba(0,0,0,0.25);
+}
+
+.agro-organic-content p{
+  color: rgba(255,255,255,0.9);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  max-width: 470px;
+}
+
+.agro-organic-btns{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.agro-organic-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary-btn{
+  background: #73c412;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(115,196,18,0.28);
+}
+
+.primary-btn:hover{
+  background: #5ca10b;
+  color: #fff;
+}
+
+.secondary-btn{
+  background: #ffffff;
+  color: #222;
+}
+
+.secondary-btn:hover{
+  background: #f3f3f3;
+  color: #222;
+}
+
+/* RIGHT SIDE */
+.agro-organic-image-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.agro-organic-orange-shape{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #f3a611;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.agro-organic-orange-shape::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.agro-organic-image-wrap{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.agro-organic-image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,0.18));
+}
+
+/* green dots */
+.agro-organic-banner-wrap::before,
+.agro-organic-banner-wrap::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #7ac414;
+  z-index: 4;
+}
+
+.agro-organic-banner-wrap::before{
+  width: 18px;
+  height: 18px;
+  left: 56%;
+  bottom: 24px;
+}
+
+.agro-organic-banner-wrap::after{
+  width: 10px;
+  height: 10px;
+  left: 59%;
+  bottom: 38px;
+}
+
+/* tablet */
+@media (max-width: 991.98px){
+  .agro-organic-banner{
+    padding: 60px 0;
+  }
+
+  .agro-organic-banner-wrap{
+    min-height: 320px;
+    padding: 40px 35px;
+  }
+
+  .agro-organic-content h2{
+    font-size: 52px;
+  }
+
+  .agro-organic-content p{
+    font-size: 14px;
+    max-width: 380px;
+  }
+
+  .agro-organic-image-box{
+    width: 48%;
+  }
+
+  .agro-organic-orange-shape{
+    border-top-left-radius: 140px;
+    border-bottom-left-radius: 140px;
+  }
+
+  .agro-organic-image-wrap{
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+}
+
+/* mobile */
+@media (max-width: 767.98px){
+  .agro-organic-banner{
+    padding: 50px 0;
+  }
+
+  .agro-organic-banner-wrap{
+    min-height: auto;
+    display: block;
+    padding: 35px 20px 220px;
+  }
+
+  .agro-organic-content{
+    max-width: 100%;
+  }
+
+  .agro-organic-subtitle{
+    font-size: 14px;
+  }
+
+  .agro-organic-content h2{
+    font-size: 40px;
+  }
+
+  .agro-organic-content p{
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .agro-organic-btn{
+    min-width: 115px;
+    height: 40px;
+    font-size: 13px;
+    padding: 0 18px;
+  }
+
+  .agro-organic-image-box{
+    width: 100%;
+    height: 210px;
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
+
+  .agro-organic-orange-shape{
+    width: 80%;
+    height: 100%;
+    right: 0;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+  }
+
+  .agro-organic-image-wrap{
+    top: 14px;
+    right: 14px;
+    bottom: 14px;
+    left: 32%;
+  }
+
+  .agro-organic-banner-wrap::before{
+    left: auto;
+    right: 95px;
+    bottom: 18px;
+  }
+
+  .agro-organic-banner-wrap::after{
+    left: auto;
+    right: 75px;
+    bottom: 32px;
+  }
+}
+
+/* small mobile */
+@media (max-width: 575.98px){
+  .agro-organic-banner-wrap{
+    padding: 30px 16px 200px;
+  }
+
+  .agro-organic-content h2{
+    font-size: 32px;
+  }
+
+  .agro-organic-content p{
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .agro-organic-btn{
+    min-width: 105px;
+    height: 38px;
+    font-size: 12px;
+    padding: 0 16px;
+  }
+
+  .agro-organic-image-box{
+    height: 185px;
+  }
+
+  .agro-organic-orange-shape{
+    width: 86%;
+    border-top-left-radius: 95px;
+    border-bottom-left-radius: 95px;
+  }
+
+  .agro-organic-image-wrap{
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 34%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.agro-vision-mission-section{
+  position: relative;
+  padding: 70px 0;
+  background: linear-gradient(135deg, #f8fbf4 0%, #eef8ea 100%);
+  overflow: hidden;
+}
+
+.agro-vision-mission-wrap{
+  position: relative;
+  z-index: 2;
+}
+
+/* soft background shapes */
+.agro-vision-mission-section::before{
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -80px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgba(42, 125, 50, 0.06);
+  z-index: 0;
+}
+
+.agro-vision-mission-section::after{
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -40px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(101, 183, 58, 0.08);
+  z-index: 0;
+}
+
+/* LEFT */
+.agro-vm-left{
+  position: relative;
+  z-index: 2;
+}
+
+.agro-vm-title-box{
+  margin-bottom: 28px;
+}
+
+.agro-vm-leaf{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(42, 125, 50, 0.10);
+  color: #2c8c3c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.agro-vm-title-box h2{
+  font-size: 64px;
+  line-height: 0.95;
+  font-weight: 800;
+  color: #228b3a;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.agro-vm-line-wrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 6px;
+}
+
+.agro-vm-line-wrap::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background: #5cae3e;
+  z-index: 0;
+}
+
+.agro-vm-tag{
+  position: relative;
+  z-index: 1;
+  background: #dff0d8;
+  color: #2d5f2f;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.agro-vm-center-dot{
+  position: relative;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #78c542;
+  border: 4px solid #eef8ea;
+  flex: 0 0 22px;
+}
+
+.agro-vm-card h4{
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f3b22;
+  margin-bottom: 14px;
+}
+
+.agro-vm-card p{
+  font-size: 15px;
+  line-height: 1.9;
+  color: #4e5b4f;
+  margin: 0;
+  text-align: justify;
+}
+
+/* RIGHT */
+.agro-vm-right{
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agro-vm-bg-shape{
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1f8e35 0%, #2d9f3c 60%, #7bc744 100%);
+  border-top-left-radius: 220px;
+  border-bottom-left-radius: 220px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.agro-vm-bg-shape::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.08);
+}
+
+.agro-vm-bg-shape::after{
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.10);
+}
+
+.agro-vm-circle-image{
+  position: relative;
+  z-index: 2;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  padding: 12px;
+  background: #f4f7f2;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.agro-vm-circle-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.agro-vm-decor{
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.decor-one{
+  width: 74px;
+  height: 74px;
+  right: 10px;
+  top: 40px;
+  background: rgba(155, 215, 86, 0.85);
+  border: 6px solid rgba(255,255,255,0.18);
+}
+
+.decor-two{
+  width: 54px;
+  height: 54px;
+  left: 40px;
+  bottom: 90px;
+  background: #92d050;
+  border: 5px solid #eef8ea;
+}
+
+.decor-three{
+  width: 64px;
+  height: 64px;
+  right: 20px;
+  bottom: 55px;
+  background: #2f8e37;
+  border: 5px solid #eef8ea;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1199.98px){
+  .agro-vm-title-box h2{
+    font-size: 54px;
+  }
+
+  .agro-vm-right{
+    min-height: 430px;
+  }
+
+  .agro-vm-circle-image{
+    width: 310px;
+    height: 310px;
+  }
+}
+
+@media (max-width: 991.98px){
+  .agro-vision-mission-section{
+    padding: 70px 0;
+  }
+
+  .agro-vm-title-box h2{
+    font-size: 48px;
+  }
+
+  .agro-vm-right{
+    min-height: 380px;
+    margin-top: 20px;
+  }
+
+  .agro-vm-bg-shape{
+    right: 0;
+    border-top-left-radius: 160px;
+    border-bottom-left-radius: 160px;
+  }
+
+  .agro-vm-circle-image{
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .agro-vision-mission-section{
+    padding: 55px 0;
+  }
+
+  .agro-vm-title-box{
+    text-align: center;
+  }
+
+  .agro-vm-leaf{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .agro-vm-title-box h2{
+    font-size: 38px;
+    line-height: 1;
+  }
+
+  .agro-vm-line-wrap{
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .agro-vm-line-wrap::before{
+    display: none;
+  }
+
+  .agro-vm-tag{
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  .agro-vm-center-dot{
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+    border-width: 3px;
+  }
+
+  .agro-vm-card{
+    text-align: center;
+  }
+
+  .agro-vm-card h4{
+    font-size: 22px;
+  }
+
+  .agro-vm-card p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .agro-vm-right{
+    min-height: 320px;
+  }
+
+  .agro-vm-bg-shape{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+  }
+
+  .agro-vm-circle-image{
+    width: 240px;
+    height: 240px;
+  }
+
+  .decor-one{
+    width: 58px;
+    height: 58px;
+    right: 20px;
+    top: 18px;
+  }
+
+  .decor-two{
+    width: 42px;
+    height: 42px;
+    left: 18px;
+    bottom: 50px;
+  }
+
+  .decor-three{
+    width: 52px;
+    height: 52px;
+    right: 12px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px){
+  .agro-vm-title-box h2{
+    font-size: 32px;
+  }
+
+  .agro-vm-card h4{
+    font-size: 20px;
+  }
+
+  .agro-vm-card p{
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .agro-vm-right{
+    min-height: 280px;
+  }
+
+  .agro-vm-circle-image{
+    width: 210px;
+    height: 210px;
+    padding: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.agro-contact-banner{
+  padding: 70px 0;
+  background: #f6fbf3;
+}
+
+.agro-contact-banner-wrap{
+  position: relative;
+  background: linear-gradient(135deg, #1f7a35 0%, #2d9b3f 55%, #79c94b 100%);
+  border-radius: 28px;
+  padding: 55px 50px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.agro-contact-banner-wrap::before{
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: -80px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  z-index: -1;
+}
+
+.agro-contact-banner-wrap::after{
+  content: "";
+  position: absolute;
+  right: -60px;
+  bottom: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  z-index: -1;
+}
+
+.agro-contact-content{
+  color: #fff;
+}
+
+.agro-contact-subtitle{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #dff5cf;
+  margin-bottom: 12px;
+}
+
+.agro-contact-content h2{
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.agro-contact-content p{
+  font-size: 15px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.9);
+  max-width: 560px;
+  margin-bottom: 28px;
+}
+
+.agro-contact-btns{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.agro-contact-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 145px;
+  height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.agro-contact-primary{
+  background: #fff;
+  color: #1f7a35;
+}
+
+.agro-contact-primary:hover{
+  background: #f1f1f1;
+  color: #1f7a35;
+}
+
+.agro-contact-outline{
+  border: 1.5px solid rgba(255,255,255,0.7);
+  color: #fff;
+  background: transparent;
+}
+
+.agro-contact-outline:hover{
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+.agro-contact-info-box{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.agro-contact-info-card{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  padding: 18px 20px;
+}
+
+.agro-contact-icon{
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2d9b3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.agro-contact-info-card span{
+  display: block;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 4px;
+}
+
+.agro-contact-info-card h4{
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  word-break: break-word;
+}
+
+@media (max-width: 991.98px){
+  .agro-contact-banner{
+    padding: 60px 0;
+  }
+
+  .agro-contact-banner-wrap{
+    padding: 42px 32px;
+  }
+
+  .agro-contact-content h2{
+    font-size: 34px;
+  }
+
+  .agro-contact-content p{
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px){
+  .agro-contact-banner{
+    padding: 50px 0;
+  }
+
+  .agro-contact-banner-wrap{
+    border-radius: 22px;
+    padding: 32px 20px;
+  }
+
+  .agro-contact-content{
+    text-align: center;
+  }
+
+  .agro-contact-subtitle{
+    font-size: 14px;
+  }
+
+  .agro-contact-content h2{
+    font-size: 28px;
+  }
+
+  .agro-contact-content p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+  }
+
+  .agro-contact-btns{
+    justify-content: center;
+  }
+
+  .agro-contact-btn{
+    min-width: 130px;
+    height: 42px;
+    font-size: 13px;
+    padding: 0 18px;
+  }
+
+  .agro-contact-info-card{
+    padding: 16px;
+    gap: 12px;
+    border-radius: 16px;
+  }
+
+  .agro-contact-icon{
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    font-size: 17px;
+  }
+
+  .agro-contact-info-card h4{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px){
+  .agro-contact-banner-wrap{
+    padding: 28px 16px;
+  }
+
+  .agro-contact-content h2{
+    font-size: 24px;
+  }
+
+  .agro-contact-content p{
+    font-size: 13px;
+  }
+
+  .agro-contact-info-card h4{
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   GLOBAL SMOOTH EFFECTS
+========================================================= */
+.agro-about-hero-card,
+.agro-founder-card,
+.agro-contact-info-card,
+.agro-vm-circle-image,
+.agro-img-card,
+.agro-btn,
+.agro-organic-btn,
+.agro-contact-btn{
+  transition: all 0.35s ease;
+}
+
+.agro-about-hero-card:hover,
+.agro-founder-card:hover,
+.agro-contact-info-card:hover,
+.agro-vm-circle-image:hover,
+.agro-img-card:hover{
+  transform: translateY(-6px);
+}
+
+/* =========================================================
+   ABOUT HERO EFFECTS
+========================================================= */
+.agro-about-hero-wrap{
+  overflow: hidden;
+}
+
+.agro-about-hero-img{
+  transition: transform 1.2s ease;
+}
+
+.agro-about-hero:hover .agro-about-hero-img{
+  transform: scale(1.05);
+}
+
+.agro-about-hero-wrap::after{
+  background: linear-gradient(to right, rgba(0,0,0,0.30), rgba(0,0,0,0.10));
+}
+
+.agro-about-hero-card{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.14);
+}
+
+.agro-about-hero-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.35) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.9s;
+}
+
+.agro-about-hero-card:hover::before{
+  left: 140%;
+}
+
+.agro-about-hero-card:hover{
+  box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+}
+
+/* =========================================================
+   ABOUT INTRO IMAGE EFFECTS
+========================================================= */
+.agro-img-card{
+  position: relative;
+  box-shadow: 0 10px 30px rgba(47,125,50,0.10);
+}
+
+.agro-img-card img{
+  transition: transform 0.5s ease;
+}
+
+.agro-img-card:hover img{
+  transform: scale(1.08);
+}
+
+.green-bg{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(47,125,50,0.18);
+}
+
+.green-bg::before{
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  width: 180px;
+  height: 180px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+
+.green-bg::after{
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 50%;
+}
+
+/* =========================================================
+   COMMON BUTTON EFFECTS
+========================================================= */
+.agro-btn,
+.agro-organic-btn,
+.agro-contact-btn{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.agro-btn::before,
+.agro-organic-btn::before,
+.agro-contact-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.28) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transition: 0.7s;
+  z-index: -1;
+}
+
+.agro-btn:hover::before,
+.agro-organic-btn:hover::before,
+.agro-contact-btn:hover::before{
+  left: 120%;
+}
+
+.agro-btn:hover,
+.agro-organic-btn:hover,
+.agro-contact-btn:hover{
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   FOUNDERS SECTION EFFECTS
+========================================================= */
+.agro-founders-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-founders-section::before{
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+
+.agro-founders-section::after{
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -70px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+
+.agro-founder-card{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-founder-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(47,125,50,0.08);
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+.agro-founder-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 28px 55px rgba(26, 57, 31, 0.16);
+}
+
+.agro-founder-image-wrap::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.12), rgba(0,0,0,0.00));
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.agro-founder-card:hover .agro-founder-image-wrap::after{
+  opacity: 1;
+}
+
+.agro-founder-social a{
+  box-shadow: 0 6px 16px rgba(47,125,50,0.10);
+}
+
+.agro-founder-social a:hover{
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 10px 20px rgba(47,125,50,0.22);
+}
+
+/* =========================================================
+   ORGANIC BANNER EFFECTS
+========================================================= */
+.agro-organic-banner-wrap{
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+.agro-organic-banner-wrap::before,
+.agro-organic-banner-wrap::after{
+  animation: agroFloatDot 3.2s ease-in-out infinite;
+}
+
+.agro-organic-banner-wrap::after{
+  animation-delay: 0.5s;
+}
+
+@keyframes agroFloatDot{
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-8px);
+  }
+}
+
+.agro-organic-orange-shape{
+  box-shadow: inset 0 0 40px rgba(255,255,255,0.06);
+}
+
+.agro-organic-image{
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.agro-organic-banner-wrap:hover .agro-organic-image{
+  transform: scale(1.05);
+  filter: drop-shadow(0 18px 26px rgba(0,0,0,0.22));
+}
+
+/* =========================================================
+   VISION & MISSION EFFECTS
+========================================================= */
+.agro-vm-title-box h2{
+  position: relative;
+}
+
+.agro-vm-leaf{
+  box-shadow: 0 10px 24px rgba(42,125,50,0.10);
+  transition: all 0.35s ease;
+}
+
+.agro-vm-title-box:hover .agro-vm-leaf{
+  transform: rotate(-8deg) scale(1.08);
+  background: rgba(42, 125, 50, 0.18);
+}
+
+.agro-vm-card{
+  padding: 18px 16px;
+  border-radius: 18px;
+  transition: all 0.35s ease;
+}
+
+.agro-vm-card:hover{
+  background: rgba(255,255,255,0.55);
+  box-shadow: 0 14px 35px rgba(42,125,50,0.10);
+  transform: translateY(-6px);
+}
+
+.agro-vm-bg-shape{
+  box-shadow: 0 18px 45px rgba(30,120,50,0.18);
+}
+
+.agro-vm-circle-image{
+  overflow: hidden;
+}
+
+.agro-vm-circle-image img{
+  transition: transform 0.55s ease;
+}
+
+.agro-vm-circle-image:hover img{
+  transform: scale(1.08);
+}
+
+.agro-vm-decor{
+  animation: agroPulse 3.5s ease-in-out infinite;
+}
+
+.decor-two{
+  animation-delay: 0.4s;
+}
+
+.decor-three{
+  animation-delay: 0.8s;
+}
+
+@keyframes agroPulse{
+  0%,100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.08);
+    opacity: 0.88;
+  }
+}
+
+/* =========================================================
+   CONTACT BANNER EFFECTS
+========================================================= */
+.agro-contact-banner-wrap{
+  box-shadow: 0 20px 50px rgba(31,122,53,0.20);
+}
+
+.agro-contact-banner-wrap::before,
+.agro-contact-banner-wrap::after{
+  animation: agroBubble 6s linear infinite;
+}
+
+@keyframes agroBubble{
+  0%,100%{
+    transform: translateY(0) scale(1);
+  }
+  50%{
+    transform: translateY(-12px) scale(1.04);
+  }
+}
+
+.agro-contact-info-card{
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.agro-contact-info-card:hover{
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.12);
+}
+
+.agro-contact-icon{
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.18);
+}
+
+.agro-contact-info-card:hover .agro-contact-icon{
+  transform: rotate(-10deg) scale(1.08);
+  background: #f4ffe9;
+}
+
+/* =========================================================
+   TEXT HOVER SMALL ENHANCEMENT
+========================================================= */
+.agro-founder-content h3,
+.agro-contact-content h2,
+.agro-about-content h2,
+.agro-vm-title-box h2,
+.agro-organic-content h2{
+  transition: all 0.35s ease;
+}
+
+.agro-founder-card:hover .agro-founder-content h3,
+.agro-contact-banner-wrap:hover .agro-contact-content h2,
+.agro-organic-banner-wrap:hover .agro-organic-content h2{
+  letter-spacing: 0.3px;
+}
+
+/* =========================================================
+   MOBILE SAFE - REDUCE HEAVY EFFECTS
+========================================================= */
+@media (max-width: 767.98px){
+  .agro-founder-card:hover,
+  .agro-about-hero-card:hover,
+  .agro-contact-info-card:hover,
+  .agro-vm-card:hover,
+  .agro-img-card:hover{
+    transform: translateY(-3px);
+  }
+
+  .agro-founder-card:hover .agro-founder-image,
+  .agro-vm-circle-image:hover img,
+  .agro-img-card:hover img,
+  .agro-organic-banner-wrap:hover .agro-organic-image{
+    transform: scale(1.03);
+  }
+}

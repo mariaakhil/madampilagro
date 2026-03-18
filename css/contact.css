@@ -1,0 +1,349 @@
+:root{
+  --agro-green:#2e7d32;
+  --agro-dark-green:#1f5a24;
+  --agro-light-green:#eef8ef;
+  --agro-orange:#74f354;
+  --agro-orange-dark:#064616;
+  --agro-text:#1f2a1f;
+  --agro-muted:#667085;
+  --agro-white:#ffffff;
+  --agro-border:#e6ece6;
+  --agro-shadow:0 10px 30px rgba(0,0,0,0.08);
+  --agro-radius:20px;
+}
+
+.agro-contact-hero{
+  padding: 130px 0 80px;
+  background: linear-gradient(135deg, #f7fbf3 0%, #edf8ee 50%, #fff6eb 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-contact-hero::before{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+  background:rgba(242,140,40,0.10);
+  border-radius:50%;
+  top:-60px;
+  left:-60px;
+}
+
+.agro-contact-hero::after{
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  background:rgba(46,125,50,0.08);
+  border-radius:50%;
+  bottom:-80px;
+  right:-80px;
+}
+
+.agro-contact-hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.agro-contact-tag{
+  display:inline-block;
+  background:rgba(242,140,40,0.12);
+  color:var(--agro-orange-dark);
+  padding:8px 18px;
+  border-radius:50px;
+  font-weight:600;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.agro-contact-hero-content h1{
+  font-size:52px;
+  font-weight:800;
+  color:var(--agro-dark-green);
+  margin-bottom:18px;
+  line-height:1.2;
+}
+
+.agro-contact-hero-content p{
+  font-size:17px;
+  color:var(--agro-muted);
+  line-height:1.8;
+  max-width:560px;
+  margin-bottom:28px;
+}
+
+.agro-contact-hero-btns{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.agro-btn-main{
+  background:var(--agro-orange);
+  color:#fff;
+  border:none;
+  padding:13px 28px;
+  border-radius:50px;
+  font-weight:600;
+}
+
+.agro-btn-main:hover{
+  background:var(--agro-orange-dark);
+  color:#fff;
+}
+
+.agro-btn-outline{
+  border:2px solid var(--agro-green);
+  color:var(--agro-green);
+  padding:12px 28px;
+  border-radius:50px;
+  font-weight:600;
+  background:transparent;
+}
+
+.agro-btn-outline:hover{
+  background:var(--agro-green);
+  color:#fff;
+}
+
+.agro-contact-hero-image-wrap{
+  position:relative;
+  z-index:2;
+}
+
+.agro-contact-hero-image{
+  border-radius:32px;
+  overflow:hidden;
+  box-shadow:var(--agro-shadow);
+  position:relative;
+}
+
+.agro-contact-hero-image img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  display:block;
+}
+
+/* CONTACT INFO */
+.agro-contact-info-section{
+  padding: 0 0 70px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 3;
+}
+
+.agro-contact-info-card{
+  background:var(--agro-white);
+  padding:28px 22px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:var(--agro-shadow);
+  height:100%;
+  border:1px solid var(--agro-border);
+  transition:all 0.3s ease;
+}
+
+.agro-contact-info-card:hover{
+  transform:translateY(-6px);
+}
+
+.agro-contact-icon{
+  width:68px;
+  height:68px;
+  margin:0 auto 18px;
+  background:linear-gradient(135deg, var(--agro-green), var(--agro-orange));
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:24px;
+}
+
+.agro-contact-info-card h5{
+  font-size:20px;
+  font-weight:700;
+  color:var(--agro-dark-green);
+  margin-bottom:10px;
+}
+
+.agro-contact-info-card p{
+  margin:0;
+  color:var(--agro-muted);
+  font-size:15px;
+  line-height:1.7;
+}
+
+/* CONTACT FORM */
+.agro-contact-form-section{
+  padding: 40px 0 90px;
+  background:#fff;
+}
+
+.agro-contact-left-box{
+  background:linear-gradient(180deg, #f4fbf4 0%, #fff8f1 100%);
+  padding:40px 30px;
+  border-radius:24px;
+  border:1px solid var(--agro-border);
+}
+
+.agro-contact-small-title{
+  display:inline-block;
+  font-size:14px;
+  font-weight:700;
+  color:var(--agro-orange-dark);
+  margin-bottom:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.agro-contact-left-box h2{
+  font-size:36px;
+  font-weight:800;
+  color:var(--agro-dark-green);
+  margin-bottom:16px;
+}
+
+.agro-contact-left-box p{
+  color:var(--agro-muted);
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.agro-contact-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.agro-contact-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin-bottom:14px;
+  color:var(--agro-text);
+  font-weight:500;
+}
+
+.agro-contact-list li i{
+  color:var(--agro-orange);
+  margin-top:3px;
+}
+
+.agro-contact-form-box{
+  background:var(--agro-white);
+  border:1px solid var(--agro-border);
+  box-shadow:var(--agro-shadow);
+  border-radius:24px;
+  padding:35px;
+  height:100%;
+}
+
+.agro-contact-form-box .form-label{
+  font-weight:600;
+  color:var(--agro-dark-green);
+  margin-bottom:8px;
+}
+
+.agro-form-control{
+  height:54px;
+  border-radius:14px;
+  border:1px solid #dfe7df;
+  padding:12px 16px;
+  box-shadow:none;
+}
+
+.agro-form-control:focus{
+  border-color:var(--agro-orange);
+  box-shadow:0 0 0 0.15rem rgba(242,140,40,0.15);
+}
+
+textarea.agro-form-control{
+  height:auto;
+  min-height:140px;
+  resize:none;
+}
+
+.agro-submit-btn{
+  background:linear-gradient(135deg, var(--agro-orange), var(--agro-green));
+  color:#fff;
+  border:none;
+  padding:14px 30px;
+  border-radius:50px;
+  font-weight:700;
+  font-size:16px;
+  transition:0.3s ease;
+}
+
+.agro-submit-btn:hover{
+  opacity:0.92;
+  color:#fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px){
+  .agro-contact-hero{
+    padding: 110px 0 70px;
+  }
+
+  .agro-contact-hero-content h1{
+    font-size:40px;
+  }
+
+  .agro-contact-hero-image img{
+    height:380px;
+  }
+
+  .agro-contact-left-box h2{
+    font-size:30px;
+  }
+
+  .agro-contact-form-box{
+    padding:28px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .agro-contact-hero{
+    padding: 95px 0 60px;
+    text-align:center;
+  }
+
+  .agro-contact-hero-content h1{
+    font-size:30px;
+  }
+
+  .agro-contact-hero-content p{
+    font-size:15px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .agro-contact-hero-btns{
+    justify-content:center;
+  }
+
+  .agro-contact-hero-image img{
+    height:280px;
+  }
+
+  .agro-contact-info-section{
+    padding-bottom:50px;
+    margin-top:0;
+  }
+
+  .agro-contact-left-box,
+  .agro-contact-form-box{
+    padding:24px 20px;
+  }
+
+  .agro-contact-left-box h2{
+    font-size:26px;
+  }
+
+  .agro-contact-info-card{
+    padding:24px 18px;
+  }
+}

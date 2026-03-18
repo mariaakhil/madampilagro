@@ -1,0 +1,674 @@
+:root{
+  --agro-green:#1f4d36;
+  --agro-green-dark:#163827;
+  --agro-light:#f6fbf7;
+  --agro-orange:#74f354;
+  --agro-orange-dark:#064616;
+  --agro-text:#2b2b2b;
+  --agro-muted:#6f7b72;
+  --agro-white:#ffffff;
+  --agro-border:#e4eee7;
+  --agro-shadow:0 15px 40px rgba(0,0,0,0.08);
+  --agro-radius:22px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--agro-text);
+}
+
+/* HERO */
+.agro-service-hero{
+  background:
+    linear-gradient(rgba(19, 52, 36, 0.72), rgba(19, 52, 36, 0.72)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  padding: 140px 0 90px;
+  color: var(--agro-white);
+}
+
+.agro-service-hero-content{
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.agro-service-tag,
+.section-mini-title{
+  display: inline-block;
+  background: rgba(242, 140, 40, 0.14);
+  color: var(--agro-orange);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-bottom: 18px;
+}
+
+.agro-service-hero h1{
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.agro-service-hero p{
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.9);
+}
+
+/* INTRO */
+.agro-service-intro{
+  background: var(--agro-white);
+}
+
+.agro-service-intro-left h2,
+.section-main-title,
+.agro-service-text h2,
+.agro-service-cta-box h2{
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--agro-green-dark);
+  margin-bottom: 18px;
+}
+
+.agro-service-intro-left p,
+.agro-service-text p,
+.agro-service-cta-box p{
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--agro-muted);
+}
+
+.agro-service-intro-box{
+  background: var(--agro-light);
+  border: 1px solid var(--agro-border);
+  border-radius: var(--agro-radius);
+  padding: 32px;
+  box-shadow: var(--agro-shadow);
+}
+
+.agro-service-feature{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #dfe9e2;
+}
+
+.agro-service-feature:last-child{
+  border-bottom: none;
+}
+
+.agro-service-feature i{
+  font-size: 20px;
+  color: var(--agro-orange);
+}
+
+.agro-service-feature span{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--agro-green-dark);
+}
+
+/* SERVICES CARD */
+.agro-services-section{
+  background: #fbfdfb;
+}
+
+.agro-service-card{
+  background: var(--agro-white);
+  border: 1px solid var(--agro-border);
+  border-radius: var(--agro-radius);
+  padding: 30px 24px;
+  box-shadow: var(--agro-shadow);
+  transition: 0.35s ease;
+}
+
+.agro-service-card:hover{
+  transform: translateY(-8px);
+}
+
+.agro-service-icon{
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--agro-orange), var(--agro-orange-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.agro-service-icon i{
+  font-size: 30px;
+  color: var(--agro-white);
+}
+
+.agro-service-card h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--agro-green-dark);
+  margin-bottom: 14px;
+}
+
+.agro-service-card p{
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--agro-muted);
+  margin-bottom: 18px;
+}
+
+.agro-service-card ul{
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+.agro-service-card ul li{
+  color: var(--agro-text);
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* DETAIL SECTIONS */
+.agro-service-detail{
+  background: var(--agro-white);
+}
+
+.agro-detail-alt{
+  background: var(--agro-light);
+}
+
+.agro-service-image{
+  min-height: 420px;
+  border-radius: 28px;
+  box-shadow: var(--agro-shadow);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-service-image::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(31,77,54,0.18), rgba(242,140,40,0.10));
+}
+
+.agro-bg-one{
+  background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80');
+}
+
+.agro-bg-two{
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80');
+}
+
+.agro-bg-three{
+  background-image: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1200&q=80');
+}
+
+.agro-service-text{
+  padding: 10px 8px;
+}
+
+/* CTA */
+.agro-service-cta{
+  padding: 40px 0 80px;
+  background: #fbfdfb;
+}
+
+.agro-service-cta-box{
+  background: linear-gradient(135deg, var(--agro-green), var(--agro-green-dark));
+  border-radius: 30px;
+  padding: 55px 30px;
+  box-shadow: var(--agro-shadow);
+}
+
+.agro-service-cta-box h2{
+  color: var(--agro-white);
+}
+
+.agro-service-cta-box p{
+  color: rgba(255,255,255,0.85);
+  max-width: 700px;
+  margin: 0 auto 26px;
+}
+
+.agro-service-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 50px;
+  background: var(--agro-orange);
+  color: var(--agro-white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.agro-service-btn:hover{
+  background: var(--agro-orange-dark);
+  color: var(--agro-white);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px){
+  .agro-service-hero{
+    padding: 120px 0 70px;
+  }
+
+  .agro-service-hero h1{
+    font-size: 40px;
+  }
+
+  .agro-service-intro-left h2,
+  .section-main-title,
+  .agro-service-text h2,
+  .agro-service-cta-box h2{
+    font-size: 30px;
+  }
+
+  .agro-service-image{
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .agro-service-hero{
+    padding: 100px 0 60px;
+  }
+
+  .agro-service-hero h1{
+    font-size: 30px;
+  }
+
+  .agro-service-hero p{
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .agro-service-intro-left h2,
+  .section-main-title,
+  .agro-service-text h2,
+  .agro-service-cta-box h2{
+    font-size: 25px;
+  }
+
+  .agro-service-card{
+    padding: 24px 20px;
+  }
+
+  .agro-service-card h3{
+    font-size: 21px;
+  }
+
+  .agro-service-image{
+    min-height: 260px;
+    border-radius: 20px;
+  }
+
+  .agro-service-intro-box{
+    padding: 24px 20px;
+  }
+
+  .agro-service-cta-box{
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   EFFECTS / ANIMATIONS
+========================= */
+
+/* smooth animation for main elements */
+.agro-service-card,
+.agro-service-icon,
+.agro-service-image,
+.agro-service-btn,
+.agro-service-feature,
+.agro-service-text h2,
+.agro-service-card h3,
+.agro-service-tag,
+.section-mini-title,
+.agro-service-cta-box {
+  transition: all 0.4s ease;
+}
+
+/* HERO TAG EFFECT */
+.agro-service-tag,
+.section-mini-title{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-service-tag::before,
+.section-mini-title::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+  transition: 0.7s ease;
+}
+
+.agro-service-tag:hover::before,
+.section-mini-title:hover::before{
+  left: 130%;
+}
+
+/* SERVICE CARD ADVANCED HOVER */
+.agro-service-card{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-service-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(116,243,84,0.08),
+    rgba(6,70,22,0.03)
+  );
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 0;
+}
+
+.agro-service-card > *{
+  position: relative;
+  z-index: 1;
+}
+
+.agro-service-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(6, 70, 22, 0.18);
+  border-color: rgba(116,243,84,0.35);
+}
+
+.agro-service-card:hover::before{
+  opacity: 1;
+}
+
+/* ICON EFFECT */
+.agro-service-icon{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-service-icon::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -120%;
+  left: -120%;
+  background: rgba(255,255,255,0.18);
+  transform: rotate(45deg);
+  transition: 0.6s ease;
+}
+
+.agro-service-card:hover .agro-service-icon{
+  transform: scale(1.08) rotate(4deg);
+  box-shadow: 0 12px 24px rgba(6,70,22,0.22);
+}
+
+.agro-service-card:hover .agro-service-icon::before{
+  top: 120%;
+  left: 120%;
+}
+
+.agro-service-card:hover .agro-service-icon i{
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+/* CARD TITLE EFFECT */
+.agro-service-card h3,
+.agro-service-text h2{
+  position: relative;
+  display: inline-block;
+}
+
+.agro-service-card h3::after,
+.agro-service-text h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  border-radius: 10px;
+  background: linear-gradient(to right, var(--agro-orange), var(--agro-orange-dark));
+  transition: width 0.4s ease;
+}
+
+.agro-service-card:hover h3::after,
+.agro-service-text:hover h2::after{
+  width: 100%;
+}
+
+/* LIST ITEM HOVER */
+.agro-service-card ul li{
+  transition: all 0.3s ease;
+}
+
+.agro-service-card:hover ul li{
+  transform: translateX(4px);
+}
+
+.agro-service-card ul li:hover{
+  color: var(--agro-green-dark);
+  transform: translateX(8px);
+}
+
+/* INTRO FEATURE EFFECT */
+.agro-service-feature{
+  border-radius: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.agro-service-feature:hover{
+  background: rgba(116,243,84,0.08);
+  transform: translateX(6px);
+}
+
+.agro-service-feature:hover i{
+  transform: scale(1.15);
+  color: var(--agro-orange-dark);
+}
+
+/* IMAGE ZOOM EFFECT */
+.agro-service-image{
+  transform: scale(1);
+}
+
+.agro-service-image::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 0.8s ease;
+  z-index: 0;
+}
+
+.agro-bg-one::before{
+  background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80');
+}
+
+.agro-bg-two::before{
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80');
+}
+
+.agro-bg-three::before{
+  background-image: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1200&q=80');
+}
+
+.agro-service-image::after{
+  z-index: 1;
+}
+
+.agro-service-image:hover::before{
+  transform: scale(1.08);
+}
+
+/* subtle floating effect */
+.agro-service-image:hover{
+  box-shadow: 0 22px 55px rgba(6,70,22,0.16);
+}
+
+/* CTA BOX EFFECT */
+.agro-service-cta-box{
+  position: relative;
+  overflow: hidden;
+}
+
+.agro-service-cta-box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.16),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: 0.9s ease;
+}
+
+.agro-service-cta-box:hover::before{
+  left: 160%;
+}
+
+/* BUTTON EFFECT */
+.agro-service-btn{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(6,70,22,0.14);
+}
+
+.agro-service-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.45),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.7s ease;
+}
+
+.agro-service-btn:hover{
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 30px rgba(6,70,22,0.22);
+}
+
+.agro-service-btn:hover::before{
+  left: 150%;
+}
+
+/* INTRO BOX HOVER */
+.agro-service-intro-box:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(6,70,22,0.12);
+}
+
+/* HERO TEXT ENTRY EFFECT */
+.agro-service-hero-content h1{
+  animation: agroFadeUp 1s ease both;
+}
+
+.agro-service-hero-content p{
+  animation: agroFadeUp 1.2s ease both;
+}
+
+.agro-service-tag{
+  animation: agroFadeUp 0.8s ease both;
+}
+
+/* reusable animation */
+@keyframes agroFadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* slight pulse for icon */
+@keyframes agroPulse{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.agro-service-card:hover .agro-service-icon{
+  animation: agroPulse 1.2s ease infinite;
+}
+
+/* MOBILE SAFE */
+@media (max-width: 767.98px){
+  .agro-service-card:hover{
+    transform: translateY(-6px);
+  }
+
+  .agro-service-btn:hover{
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .agro-service-feature:hover{
+    transform: translateX(3px);
+  }
+}
